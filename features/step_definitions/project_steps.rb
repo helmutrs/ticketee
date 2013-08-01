@@ -11,7 +11,7 @@ end
 #  click_link(button)  --> Rubymine did it below for me?
 #end
 Then /^I should see "([^"]*)"$/ do |content|
-  page.should have_content(content)
+  page.should have_content?(content)
 end
 
 Then /^I should see '(.+)'$/ do |content|
@@ -20,6 +20,11 @@ end
 Then /^I should be on the project page for "([^"]*)"$/ do |name|
   project_path(Project.find_by_name!(name))
 end
+
 When /^I press "([^"]*)"$/ do |button|
   click_button(button)
+end
+
+Given /^there is a project called "([^\"]*)"$/ do |name|
+  FactoryGirl.create(:project, :name => name)
 end
