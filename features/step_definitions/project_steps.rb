@@ -11,7 +11,7 @@ end
 #  click_link(button)  --> Rubymine did it below for me?
 #end
 Then /^I should see "([^"]*)"$/ do |content|
-  page.should have_content?(content)
+  page.should have_content(content)
 end
 
 Then /^I should see '(.+)'$/ do |content|
