@@ -28,3 +28,6 @@ end
 Given /^there is a project called "([^\"]*)"$/ do |name|
   FactoryGirl.create(:project, :name => name)
 end
+Then /^I should not see "([^"]*)"$/ do |arg|
+  page.should_not have_content(arg)
+end

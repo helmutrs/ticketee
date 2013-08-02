@@ -1,3 +1,4 @@
 <title><%= title(@project.name, "Projects") %></title>
 <%= @project.name %>
 <%= link_to "Edit Project", edit_project_path(@project) %>
+<%= link_to "Delete Project", @project, :method => :delete, :confirm => "Are you sure want to delete this project?" %>
