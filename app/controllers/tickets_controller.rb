@@ -25,6 +25,16 @@ class TicketsController < ApplicationController
    # nothing to show is already loaded on before_filter
   end
 
+  def update
+    if @ticket.update_attributes(params[:ticket])
+      flash[:notice] = "Ticket has been updated."
+      redirect_to [@project, @ticket]
+    else
+      flash[:alert] = "Ticket has not been updated."
+      render :action => "edit"
+    end
+  end
+
   private
     def find_project
       @project = Project.find(params[:project_id]) # here we don't use just the :id because it the project_id we're looking for.
