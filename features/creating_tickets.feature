@@ -28,7 +28,5 @@ Scenario: Description must be longer than 10 characters
   Then I should see "Ticket has not been created."
   And I should see "Description is too short"
 
-Scenario:
-
 
   
