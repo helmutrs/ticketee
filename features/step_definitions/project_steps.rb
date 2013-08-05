@@ -61,6 +61,8 @@ Then /^(?:|I )should see "([^"]*)" within (.*)$/ do |text, parent|
   end
 end
 
+
+
 #Then /^(?:|I )should see "([^"]*)"$/ do |text|
 #  if page.respond_to? :should
 #    page.should have_content(text)

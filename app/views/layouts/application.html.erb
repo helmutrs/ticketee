@@ -20,7 +20,12 @@
       <%= value %>
     </div>
 <% end %>
-<nav><%= link_to "Sign up", new_user_registration_path%></nav>
+<nav>
+  <% if user_signed_in? %>
+      Signed in as <%= current_user.email %>
+  <% else %>
+    <%= link_to "Sign up", new_user_registration_path%></nav>
+  <% end %>
 <h1><%= link_to "Ticketee", root_path %></h1>  <!-- This is the logo that goes in all pages.-->
 <%= yield %>
 </body>
