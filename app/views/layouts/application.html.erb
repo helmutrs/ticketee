@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>
-    <% if content_for?(:title) %>
+    <% if content_for?(:title) # if the :title object is not empty.%>
        <%= yield(:title) %>
     <% else %>
         Ticketee
@@ -13,13 +13,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<% flash.each do |key, value| %>
+<!-- this flash object is helpful for passing success or failure notifications to the user for more info
+     The most common cases are flash[:notice] to pass success notifications and flash[:alert] for failures ones. -->
+<% flash.each do |key, value| %> <!-- this is a hash object -->
     <div class="flash" id="<%= key %>">
       <%= value %>
     </div>
 <% end %>
-<h1><%= link_to "Ticketee", root_path %></h1>
+<nav><%= link_to "Sign up", new_user_registration_path%></nav>
+<h1><%= link_to "Ticketee", root_path %></h1>  <!-- This is the logo that goes in all pages.-->
 <%= yield %>
-
 </body>
 </html>

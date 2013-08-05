@@ -1,3 +1,8 @@
+require 'uri'
+require 'cgi'
+require File.expand_path(File.join(File.dirname(__FILE__), "..", "support", "path"))
+require File.expand_path(File.join(File.dirname(__FILE__), "..", "support", "selectors"))
+
 module WithinHelpers
   def with_scope(locator)
     locator ? within(*selector_for(locator)) { yield } : yield
@@ -17,6 +22,10 @@ end
 
 Then /^I should see "([^"]*)"$/ do |content|
   page.should have_content(content)
+end
+
+Then /^I should see '([^"]*)'$/ do |title|
+  page.should have_title(title)
 end
 
 Then /^I should be on the project page for "([^"]*)"$/ do |name|

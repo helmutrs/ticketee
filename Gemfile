@@ -49,3 +49,5 @@ group :test do
   gem 'database_cleaner'
   gem 'factory_girl_rails',  :require => false
 end
+
+gem 'devise'

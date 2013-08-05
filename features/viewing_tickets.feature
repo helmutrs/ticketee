@@ -10,8 +10,8 @@ Background:
     | Make it shiny!  | Gradients! Starbursts! Oh my! |
   And there is a project called "Internet Explorer"
   And that project has a ticket:
-    | title     | description   |
-    | Standards | Isn't a joke. |
+    | title                 | description   |
+    | Standards compliance  | Isn't a joke. |
   And I am on the homepage
 
 Scenario: Viewing tickets for a given project
