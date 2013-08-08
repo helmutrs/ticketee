@@ -1,5 +1,7 @@
 <div id="ticket">
   <h2><%= @ticket.title %></h2>
+  <br>
+  <small>Created by <%= @ticket.user.email %></small>
   <%= simple_format(@ticket.description) %>
   <%= link_to "Edit Ticket", edit_project_ticket_path %> <!-- or [:edit, @project, @ticket] this is the array which means
    since we're on the show page for the tickets, means edit the tickets for this project -->
