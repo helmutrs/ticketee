@@ -1,7 +1,7 @@
 class FinallyUserChange < ActiveRecord::Migration
   def up
     change_table :tickets do |f|
-      f.remove :Project_id
+      f.remove :projects_id
       f.references :project
     end
   end
