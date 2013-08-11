@@ -4,6 +4,10 @@ Feature: Creating projects
   I want to create them easily
 
   Background: # since this two lines of code will repeat itself on scenario 1 and 2 so far
+    Given there are the following users:
+      | email               | password  | admin |
+      | admin@ticketee.com  | password  | true  |
+    And I am signed in as them
     Given I am on the homepage
     When I follow "New Project"
 

@@ -5,6 +5,7 @@ class ProjectsController < ApplicationController
   # PLUS IF CAN'T FIND THE THE ID IT WILL REDIRECT TO INDEX.
   # IT IS LIKE HAVING _FORM WHICH IS RENDER FOR EACH PAGE THEY WANT TO RENDER THAT FORM
 
+  before_filter :authorize_admin!, :except => [:show, :index]
   before_filter :find_project, :only => [:show, :edit, :update, :destroy]
 
   def index
@@ -60,5 +61,14 @@ class ProjectsController < ApplicationController
       flash[:alert] = "The project you were looking for could not be found."
       redirect_to projects_path
     end
+
+  private
+  def authorize_admin!
+    authenticate_user!  # provide by Devise
+    unless current_user.admin?
+      flash[:alert] = "You must be an admin to do that."
+      redirect_to root_path
+    end
+  end
 end
 
