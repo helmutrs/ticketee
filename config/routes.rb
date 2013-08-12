@@ -1,5 +1,11 @@
 Ticketee::Application.routes.draw do
 
+  # routes a controller within a namespace and defining the admin_root_path
+  namespace :admin do
+    root :to => "base#index"
+    resources :users
+  end
+
   devise_for :users
 
   root :to => "projects#index"

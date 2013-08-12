@@ -2,9 +2,7 @@ require 'spec_helper'
 #before_filter
 describe ProjectsController do
   let(:user) do
-    user = FactoryGirl.create(:user)
-    user.confirm!
-    user
+    create_user!
   end
 
   let(:project) {FactoryGirl.create(:project) } # using this in conjunction with line 22, for project.id
