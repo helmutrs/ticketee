@@ -24,7 +24,7 @@ Then /^I should see "([^"]*)"$/ do |content|
   page.should have_content(content)
 end
 
-Then /^I should see '([^"]*)'$/ do |title|
+Then /^I should see '([^"]*)' on the head title$/ do |title|
   page.should have_title(title)
 end
 

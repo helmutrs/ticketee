@@ -10,4 +10,13 @@ module ApplicationHelper
       end                                                     # by a "-".
     end
   end
+
+  def admins_only(&block) # this method takes a block, which is the code between the "do" and "end" in your view. To
+    # run this code inside the method, call block.call, which runs the specified block but only if current_user.try(:admin?)
+    # returns a value that evaluates to true. This "try" method tries a method on an object, and if that method doesn't exist
+    # (as it wouldn't if current_user were nil), then it returns nil. At the end of the method, you return nil so the content
+    # doesn't show again.
+    block.call if current_user.try(:admin?)
+    nil
+  end
 end
