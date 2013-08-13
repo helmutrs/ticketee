@@ -49,10 +49,13 @@ class Admin::UsersController < Admin::BaseController #inheritance
   end
 
   def destroy
-    @user.destroy
-    flash[:notice] = "User has been deleted."
-    redirect_to admin_users_path
-
+    if @user == current_user
+      flash[:alert] = "You cannot delete yourself!"
+    else
+      @user.destroy
+      flash[:notice] = "User has been deleted."
+    end
+    redirect_to admin_users_path # either way, always return to index to show the success or failure message
   end
 
   private
