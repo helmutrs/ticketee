@@ -6,7 +6,7 @@ class ProjectsController < ApplicationController
   # IT IS LIKE HAVING _FORM WHICH IS RENDER FOR EACH PAGE THEY WANT TO RENDER THAT FORM
 
   before_filter :authorize_admin!, :except => [:show, :index]
-  before_filter :authenticate_user!, :only => [:show] # befoer find the project
+  before_filter :authenticate_user!, :only => [:show] # before find the project
   before_filter :find_project, :only => [:show, :edit, :update, :destroy]
 
   def index
@@ -21,10 +21,10 @@ class ProjectsController < ApplicationController
     @project = Project.new(params[:project])
 
     if @project.save
-      flash[:notice] = "Project has been created."
+      flash[:notice] = 'Project has been created.'
       redirect_to @project
     else
-      flash[:alert] = "Project has not been created."
+      flash[:alert] = 'Project has not been created.'
       render('new')
     end
   end
@@ -40,10 +40,10 @@ class ProjectsController < ApplicationController
   def update
     #@project = Project.find(params[:id])
     if @project.update_attributes(params[:project])
-      flash[:notice] = "Project has been updated"
+      flash[:notice] = 'Project has been updated'
       redirect_to @project
     else
-      flash[:alert] = "Project has not been updated."
+      flash[:alert] = 'Project has not been updated.'
       render :action => 'edit' # similar than render('edit')
     end
   end
@@ -51,17 +51,21 @@ class ProjectsController < ApplicationController
   def destroy
     #@project = Project.find(params[:id])
     @project.destroy
-    flash[:notice] = "Project has been deleted."
+    flash[:notice] = 'Project has been deleted.'
     redirect_to projects_path
   end
 
   private
     def find_project
-      @project = Project.readable_by(current_user).find(params[:id]) # authenticate the user, and his/her right to see the project
-    rescue ActiveRecord::RecordNotFound # ActiveRecord will raise this exception if the project was not found, because it not
-      # on the db or because it was misspell it. If we don't use the bang version o this method, the finder returns nil. If project_path
-      # is passed nil, you get a hard-to-debug error.
-      flash[:alert] = "The project you were looking for could not be found."
+      @project = if current_user.admin?
+        Project.find(params[:id])
+      else
+        Project.readable_by(current_user).find(params[:id]) # authenticate the user, and his/her right to see the project
+      end
+      rescue ActiveRecord::RecordNotFound # ActiveRecord will raise this exception if the project was not found, because it not
+                                        # on the db or because it was misspell it. If we don't use the bang version o this method, the finder returns nil. If project_path
+                                        # is passed nil, you get a hard-to-debug error.
+      flash[:alert] = 'The project you were looking for could not be found.'
       redirect_to projects_path
     end
 end

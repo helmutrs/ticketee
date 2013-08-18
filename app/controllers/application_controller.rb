@@ -9,11 +9,10 @@ class ApplicationController < ActionController::Base
   # admin/base_controller
   private
   def authorize_admin!
-    authenticate_user!
-    unless current_user.admin?
+    authenticate_user! # This is a devise method to authenticate that the user exist.
+    unless current_user.admin? # if the user exist, then we check if the user is an admin.
       flash[:alert] = "You must be an admin to do that."
       redirect_to root_path
     end
   end
-
 end

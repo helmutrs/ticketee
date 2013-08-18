@@ -3,7 +3,7 @@ class Admin::UsersController < Admin::BaseController #inheritance
   before_filter :admin_status, :only => [:update, :create]
 
   def index
-    @users = User.all(:order => "email")
+    @users = User.all(:order => 'email')
   end
 
   def show
@@ -18,12 +18,12 @@ class Admin::UsersController < Admin::BaseController #inheritance
     @user = User.new(params[:user])
 
     if @user.save
-      flash[:notice] = "User has been created."
+      flash[:notice] = 'User has been created.'
       #@user.update_attribute("admin", admin) if admin
-      @user.update_attribute("admin", @admin) if @admin == "1"
+      @user.update_attribute('admin', @admin) if @admin == '1'
       redirect_to admin_users_path
     else
-      flash[:alert] = "User has not been created."
+      flash[:alert] = 'User has not been created.'
       render :action => 'new'
     end
   end
