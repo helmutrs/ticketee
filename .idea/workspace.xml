@@ -2,24 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d10af79f-ae1b-46ad-929e-8e9b30942d22" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/admin/user_controller.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/creating_tickets.feature" afterPath="$PROJECT_DIR$/features/creating_tickets.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/deleting_tickets.feature" afterPath="$PROJECT_DIR$/features/deleting_tickets.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/editing_tickets.feature" afterPath="$PROJECT_DIR$/features/editing_tickets.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/permission_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/permission_steps.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/hiddin_links.feature" afterPath="$PROJECT_DIR$/features/hiddin_links.feature" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/project.rb" afterPath="$PROJECT_DIR$/app/models/project.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/factories/project_factory.rb" afterPath="$PROJECT_DIR$/factories/project_factory.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/project_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/project_steps.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/projects_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/projects_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/show.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ticketee.iml" afterPath="$PROJECT_DIR$/.idea/ticketee.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/viewing_tickets.feature" afterPath="$PROJECT_DIR$/features/viewing_tickets.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/viewing_projects.feature" afterPath="$PROJECT_DIR$/features/viewing_projects.feature" />
     </list>
     <ignored path="ticketee.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +20,8 @@
     <file path="/editing_tickets.feature" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376861926788" ignored="false" />
     <file path="/user_steps.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376322973532" ignored="false" />
     <file path="/signing_in.feature" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1375991746825" ignored="false" />
-    <file path="/hiddin_links.feature" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376276198119" ignored="false" />
-    <file path="/project_steps.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376336678008" ignored="false" />
+    <file path="/hiddin_links.feature" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376871002279" ignored="false" />
+    <file path="/project_steps.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376864335469" ignored="false" />
     <file path="/creating_projects.feature" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376245316241" ignored="false" />
     <file path="/link_steps.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376274484585" ignored="false" />
     <file path="/index.html.erb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376338439805" ignored="false" />
@@ -53,18 +42,23 @@
     <file path="/editing_users.feature" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376361585391" ignored="false" />
     <file path="/edit.html.erb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376360114050" ignored="false" />
     <file path="/deleting_users.feature" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376362668640" ignored="false" />
-    <file path="/viewing_projects.feature" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376506191453" ignored="false" />
+    <file path="/viewing_projects.feature" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376865556006" ignored="false" />
     <file path="/permission_steps.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376853254307" ignored="false" />
     <file path="/20130814195024_create_permissions.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376510361832" ignored="false" />
     <file path="/permission.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376530470641" ignored="false" />
-    <file path="/projects_controller.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376800300371" ignored="false" />
-    <file path="/project.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376797720781" ignored="false" />
+    <file path="/projects_controller.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376870687286" ignored="false" />
+    <file path="/project.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376869451724" ignored="false" />
     <file path="/20130815030516_change_user_on_permission.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376536497073" ignored="false" />
     <file path="/Gemfile" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376784662215" ignored="false" />
     <file path="/creating_tickets.feature" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376853001853" ignored="false" />
     <file path="/a.dummy" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376844754001" ignored="false" />
-    <file path="/project_factory.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376851913084" ignored="false" />
+    <file path="/project_factory.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376864383234" ignored="false" />
     <file path="/deleting_tickets.feature" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376861839156" ignored="false" />
+    <file path="/a.rxml" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376864430127" ignored="false" />
+    <file path="/a.rb" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376864433379" ignored="false" />
+    <file path="/a.coffee" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376864438167" ignored="false" />
+    <file path="/a.feature" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376864440240" ignored="false" />
+    <file path="/a.html" changelist="d10af79f-ae1b-46ad-929e-8e9b30942d22" time="1376864443120" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,19 +83,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="creating_tickets.feature" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/creating_tickets.feature">
+      <file leaf-file-name="viewing_projects.feature" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/viewing_projects.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="41" selection-start="658" selection-end="698" vertical-scroll-proportion="0.0">
+            <state line="16" column="26" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deleting_tickets.feature" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/deleting_tickets.feature">
+      <file leaf-file-name="creating_tickets.feature" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/creating_tickets.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="59" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
+            <state line="18" column="39" selection-start="658" selection-end="698" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/project.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="23" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hiddin_links.feature" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/features/hiddin_links.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="59" selection-start="431" selection-end="431" vertical-scroll-proportion="0.15430267">
               <folding />
             </state>
           </provider>
@@ -125,10 +146,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="projects_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="projects_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="28" selection-start="2331" selection-end="2331" vertical-scroll-proportion="0.9166667">
+            <state line="8" column="60" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project_steps.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/step_definitions/project_steps.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="128" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project_factory.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/factories/project_factory.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="83" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -166,22 +205,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="dbtable:/c50ca14a/c2dfe019-ce55-40be-8dbd-bc2572551d32/..users" />
         <option value="dbtable:/c50ca14a/c2dfe019-ce55-40be-8dbd-bc2572551d32/..projects" />
         <option value="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/project.rb" />
         <option value="$PROJECT_DIR$/app/views/projects/show.html.erb" />
         <option value="$PROJECT_DIR$/spec/controllers/projects_controller_spec.rb" />
-        <option value="$PROJECT_DIR$/factories/project_factory.rb" />
         <option value="$PROJECT_DIR$/log/test.log" />
         <option value="$PROJECT_DIR$/features/creating_tickets.feature" />
         <option value="$PROJECT_DIR$/features/step_definitions/permission_steps.rb" />
         <option value="$PROJECT_DIR$/features/deleting_tickets.feature" />
         <option value="$PROJECT_DIR$/features/editing_tickets.feature" />
         <option value="$PROJECT_DIR$/features/viewing_tickets.feature" />
+        <option value="$PROJECT_DIR$/features/step_definitions/project_steps.rb" />
+        <option value="$PROJECT_DIR$/factories/project_factory.rb" />
+        <option value="$PROJECT_DIR$/features/viewing_projects.feature" />
+        <option value="$PROJECT_DIR$/app/models/project.rb" />
         <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
+        <option value="$PROJECT_DIR$/features/hiddin_links.feature" />
       </list>
     </option>
   </component>
@@ -495,7 +534,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="http.proxy" />
+    <property name="options.lastSelected" value="preferences.sourceCode.Puppet" />
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
   </component>
@@ -981,44 +1020,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Volumes/Macintosh HD/Users/helmutrs/Downloads/ticketee-book/app/controllers/projects_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/projects_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="4" selection-start="802" selection-end="802" vertical-scroll-proportion="0.5877743">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Volumes/Macintosh HD/Users/helmutrs/Downloads/ticketee-book/factories/project_factory.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/step_definitions/user_steps.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/factories/project_factory.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="84" selection-end="92" vertical-scroll-proportion="0.089020774">
           <folding />
         </state>
       </provider>
@@ -1051,13 +1055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/project_steps.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="3" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.24269006">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/deleting_tickets.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="59" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
@@ -1081,14 +1078,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/features/creating_tickets.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="41" selection-start="658" selection-end="698" vertical-scroll-proportion="0.0">
+        <state line="18" column="39" selection-start="658" selection-end="698" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/project_steps.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="128" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/viewing_projects.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="26" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/factories/project_factory.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="83" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="28" selection-start="2331" selection-end="2331" vertical-scroll-proportion="0.9166667">
+        <state line="8" column="60" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/project.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="23" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/hiddin_links.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="59" selection-start="431" selection-end="431" vertical-scroll-proportion="0.15430267">
           <folding />
         </state>
       </provider>

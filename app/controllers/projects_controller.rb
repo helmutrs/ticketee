@@ -6,11 +6,11 @@ class ProjectsController < ApplicationController
   # IT IS LIKE HAVING _FORM WHICH IS RENDER FOR EACH PAGE THEY WANT TO RENDER THAT FORM
 
   before_filter :authorize_admin!, :except => [:show, :index]
-  before_filter :authenticate_user!, :only => [:show] # before find the project
+  before_filter :authenticate_user!, :only => [:show, :index] # before find the project
   before_filter :find_project, :only => [:show, :edit, :update, :destroy]
 
   def index
-     @projects = Project.all
+     @projects = Project.for(current_user).all
   end
 
   def new
@@ -57,11 +57,7 @@ class ProjectsController < ApplicationController
 
   private
     def find_project
-      @project = if current_user.admin?
-        Project.find(params[:id])
-      else
-        Project.readable_by(current_user).find(params[:id]) # authenticate the user, and his/her right to see the project
-      end
+		  @project = Project.for(current_user).find(params[:id])
       rescue ActiveRecord::RecordNotFound # ActiveRecord will raise this exception if the project was not found, because it not
                                         # on the db or because it was misspell it. If we don't use the bang version o this method, the finder returns nil. If project_path
                                         # is passed nil, you get a hard-to-debug error.

@@ -15,4 +15,9 @@ class Project < ActiveRecord::Base
     joins(:permissions).where(:permissions => {:action => 'view',
                                                :user_id => user.id})
   }
+
+	# defining the method class.
+	def self.for(user)
+		user.admin? ? Project : Project.readable_by(user)
+	end
 end
