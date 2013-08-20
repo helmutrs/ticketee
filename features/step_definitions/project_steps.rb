@@ -13,8 +13,14 @@ World(WithinHelpers)
 Given /^(?:|I )am on (.+)$/ do |page_name|
   visit path_to(page_name)
 end
+
+When /^I follow the first "([^"]*)"$/ do |link|
+  #click_link link
+	all('a').select {|elt| elt.text == "#{link}" }.first.click  # this will solve the ambiguous issues
+end
+
 When /^I follow "([^"]*)"$/ do |link|
-  click_link link
+	click_link link
 end
 When /^I fill in "([^"]*)" with "([^"]*)"$/ do |field, value|
   fill_in field, :with => value

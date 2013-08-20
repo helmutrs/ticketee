@@ -5,10 +5,11 @@ Feature: Signing up
 
 Scenario: Signing up
   Given I am on the homepage
-  When I follow "Sign up"
+  When I follow the first "Sign up"
   And I fill in "Email" with "user@ticketee.com"
   And I fill in "Password" with "password"
   And I fill in "Password confirmation" with "password"
   And I press "Sign up"
   Then I should see "A message with a confirmation link has been sent to your email address"
+  Then I should see "Please confirm your account before signing in."
 

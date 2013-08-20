@@ -14,6 +14,7 @@ Feature: Deleting users
     And I follow "Users"
 
   Scenario: Delete a user
+    And I should see "user@ticketee.com"
     And I follow "user@ticketee.com"
     When I follow "Delete User"
     Then I should see "User has been deleted"

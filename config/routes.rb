@@ -6,9 +6,14 @@ Ticketee::Application.routes.draw do
     resources :users
   end
 
-  devise_for :users
+  devise_for :users, :controllers => {:registrations => 'registrations'}
 
-  root :to => "projects#index"
+  get '/awaiting_confirmation',
+      :to => 'users#confirmation',
+      :as => 'confirm_user' # this is a helper we create, similar to the resources :tickets, or whatever that creates
+                            # bunch of helpers for routing.
+
+  root :to => 'projects#index'
 
   resources :projects do
     resources :tickets # nesting resources.
